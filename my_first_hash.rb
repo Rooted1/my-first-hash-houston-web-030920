@@ -1,7 +1,11 @@
 def my_hash
   # use the literal constructor to set the variable, my_hash, equal to a hash with key/value pairs of your choice.
-
-  
+  your_hash = {
+    :pet_type => "fish", 
+    :pet_name => "Nemo",  
+    :pet_age => 5
+  }
+  your_hash
 end
 
 
@@ -10,7 +14,13 @@ def shipping_manifest
   # fill that hash with key/value pairs that describe the following information: 
   # We have 5 whale bone corsets, 2 porcelain vases and 3 oil paintings 
 
-
+  the_manifest = {
+    :whale_bone_corsets => 5,
+    :porcelain_vases => 2, 
+    :oil_paintings => 3
+  }
+  
+  
 end
 
 def retrieval
@@ -21,7 +31,7 @@ def retrieval
                  }
 
   # Look up the value of the "oil paintings" key in the shipping_manifest hash below
-
+  shipping_manifest["oil_paintings"]
 end
 
 def adding
@@ -32,7 +42,8 @@ def adding
                  }
   # add 2 muskets to the shipping_manifest hash below
 
-
+  shipping_manifest["muskets"] = 2 
+  shipping_manifest["gun powder"] =
 
   # add 4 gun powder to the shipping_manifest hash below
 
